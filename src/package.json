@@ -1,0 +1,10 @@
+{
+  "name": "app-src",
+  "version": "1.0.0",
+  "description": "Application source folder",
+  "main": "main.ts",
+  "author": "ProjectsLab",
+  "license": "MIT",
+  "private": true,
+  "workspaces": ["ui-lib"]
+}
