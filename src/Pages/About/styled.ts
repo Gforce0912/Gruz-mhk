@@ -12,6 +12,10 @@ import styled from "styled-components";
           input:focus {
             outline: none;
         }
+        .C{
+            display: flex;
+            justify-content: center;  
+        }
     `;
     export const UpToHeader = styled.div`
         background: rgb(29, 52, 133);
@@ -97,6 +101,7 @@ import styled from "styled-components";
         margin-top: 44px;
     `;
     export const MainContaner1Title = styled.div`
+        float: left;
         width: 550px;
         margin-left: 128px;
         margin-top: 157px;
@@ -258,7 +263,7 @@ import styled from "styled-components";
         }
     `; 
     export const MainContaner3Back = styled.img`
-        margin-left: 24px;
+        // margin-left: 24px;
         margin-top: 128px;
     `;
 
@@ -289,7 +294,7 @@ import styled from "styled-components";
         .MainContaner4H1{
             font-size: 72px;
             font-weight: 600;
-            margin-left: 128px;
+            // margin-left: 128px;
             margin-top: 128px;
         }
     `;
@@ -297,7 +302,7 @@ import styled from "styled-components";
 
     export const MainContaner5 = styled.div`
 
-        margin-left: 128px;
+        // margin-left: 128px;
         .MainContaner5H1 h1{
             font-size: 72px;
             font-weight: 600;
@@ -311,7 +316,7 @@ import styled from "styled-components";
     `;
 
     export const MainContaner6 = styled.div`
-
+        margin-left: 200px;
         .MainContaner6H1 {
             margin-left: 128px;
             font-size: 33px;
@@ -375,6 +380,8 @@ import styled from "styled-components";
             margin-top: 32px;
         }
         .MainContanerContent6Comm textarea{
+            font-size: 24px;
+            resize: none;
             width: 760px;
             height: 172px;
             box-sizing: border-box;
@@ -389,7 +396,15 @@ import styled from "styled-components";
         .MainContanerContent6Comm textarea::placeholder{
             font-size: 24px;
         }
-
+        .MainContanerContent6CallTime{
+            display: flex;
+            margin-top: 33px;
+        }
+        .MainContanerContent6CallTime p{
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 500;
+        }
         .MainContanerContent6CallTime label{
             display: flex;
         }
@@ -398,5 +413,55 @@ import styled from "styled-components";
         }
         .callTimeRadio:checked + .CallTimeLabel{
             background: black;
+        }
+        .callTimeRadio{
+            display: none;
+        }
+        .CallTimeLabel{
+            margin-left: 25px;
+        }
+        .CallTimeLabel p{
+            cursor: pointer;
+            color: rgb(34, 34, 34);
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 16px;
+            background: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 16px 8px 16px;
+        }
+        .callTimeRadio + .CallTimeLabel p:checked{
+            background: rgb(29, 52, 133);
+        }
+
+        .MainContaner6ContentButCap{
+            display: flex;
+            margin-top: 65px;
+        }
+        .Recaptch{
+            margin-left: 150px;
+            width: 241px;
+            height: 59.66px;
+            box-sizing: border-box;
+            border: 2px solid rgb(29, 52, 133);
+            border-radius: 8px;
+        }
+        .MainContaner6ContentButCap button{
+            width: 300px;
+            height: 56px;
+            box-sizing: border-box;
+            border: 2px solid rgb(29, 52, 133);
+            border-radius: 20px;
+            background: rgb(29, 52, 133);
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .MainContaner6ContentButCap button a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
         }
     `;

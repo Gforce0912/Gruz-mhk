@@ -1,8 +1,7 @@
 import * as ST from '../styled'
 
-const UpToHeader = (): JSX.Element => {
-    return
-    <>
+const UpToHeader = () => {
+    return<>
         <div>
             <ST.UpToHeader>
                 <ST.UpToHeaderIcon src="../ui-lib/svg/map-pin.svg" alt="" />
@@ -13,6 +12,9 @@ const UpToHeader = (): JSX.Element => {
             </ST.UpToHeader>
         </div>
     </>
+
+
+
 };
 
 export default UpToHeader;
