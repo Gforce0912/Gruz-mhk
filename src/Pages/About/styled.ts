@@ -8,7 +8,10 @@ import styled from "styled-components";
         font-family: 'Commissioner', sans-serif;
         button:focus  {
             border:none;
-          }
+        }
+          input:focus {
+            outline: none;
+        }
     `;
     export const UpToHeader = styled.div`
         background: rgb(29, 52, 133);
@@ -308,13 +311,22 @@ import styled from "styled-components";
     `;
 
     export const MainContaner6 = styled.div`
+
         .MainContaner6H1 {
             margin-left: 128px;
             font-size: 33px;
             margin-top: 128px;
+            font-family: "Montserrat", sans-serif;
         }
         .MainContaner6H1 h1 {
             font-weight: 600;
+        }
+        .MainContanerContent6FormNTInputs{
+            display: flex;
+            padding-top: 64px;
+        }
+        .MainContanerContent6FormInput1{ 
+            display: block;
         }
         .MainContaner6Content{
             background: url('../ui-lib/svg/Group 39507.png') no-repeat;
@@ -324,12 +336,67 @@ import styled from "styled-components";
             margin-top: 76px;
         }
         .MainContaner6ContentForm{
-            z-index: 3;
+            z-index: 2;
             position: relative;
         }
         .MainContaner6ContentBack{
             position: absolute;
             margin-top: 25px;
             margin-left: 27px;
+        }
+        .MainContanerContent6FormInp{
+            color: rgba(29, 52, 133, 0.5);
+            width: 348px;
+            height: 64px;
+            box-sizing: border-box;
+            border: 3px solid rgb(29, 52, 133);
+            border-radius: 16px;
+            background: rgb(255, 255, 255);
+            align-items: center;
+            padding: 16px 32px 16px 32px;
+            margin-top: 16px;
+        }
+        .MainContanerContent6FormInp[type="text"]
+        {
+            font-size: 24px;
+        }
+        .MainContanerContent6FormInput2{
+            margin-left: 63px;
+        }
+        .MainContaner6ContentForm {
+            padding-left: 65px;
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+        }
+        .MainContanerContent6Comm [type="text"]{
+            font-size: 24px;
+        }
+        .MainContanerContent6Comm{
+            margin-top: 32px;
+        }
+        .MainContanerContent6Comm textarea{
+            width: 760px;
+            height: 172px;
+            box-sizing: border-box;
+            border: 3px solid rgb(29, 52, 133);
+            border-radius: 16px;
+            background: rgb(255, 255, 255);
+            margin-top: 16px;
+            padding-top: 10px;
+            padding-left: 32px;
+            color: rgba(29, 52, 133, 0.5);
+        }
+        .MainContanerContent6Comm textarea::placeholder{
+            font-size: 24px;
+        }
+
+        .MainContanerContent6CallTime label{
+            display: flex;
+        }
+        .MainContanerContent6CallTimeRadio{
+            display: flex;
+        }
+        .callTimeRadio:checked + .CallTimeLabel{
+            background: black;
         }
     `;

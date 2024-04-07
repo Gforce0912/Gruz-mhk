@@ -1,16 +1,11 @@
+import UpToHeader from './components/UpToHeader'
 import * as ST from './styled'
 
 const About = (): JSX.Element => {
     
     return <>
         <ST.AboutWrapp>
-            <ST.UpToHeader>
-                <ST.UpToHeaderIcon src="../ui-lib/svg/map-pin.svg" alt="" />
-                <ST.UpToHeaderH4>Махачкала</ST.UpToHeaderH4>
-                <ST.UpToHeaderGraph>
-                    <h4>График звонков: круглосуточно</h4>
-                </ST.UpToHeaderGraph>
-            </ST.UpToHeader>
+            <UpToHeader/>
             <ST.Header>
                 <ST.HeaderLogo>
                     <a href="#">
@@ -128,26 +123,36 @@ const About = (): JSX.Element => {
                 <div className="MainContaner6Content">
                     <img className="MainContaner6ContentBack" src="../ui-lib/svg/Rectangle 23791.png" alt="" />
                     <div className="MainContaner6ContentForm">
-                        <div className="MainContaner6ContentMainForm">
-                            <div className="MainContaner6ContentMainFormPersonData">
-                                <div className="MainContaner6ContentFormName">
-                                    <p>Имя*</p>
-                                    <input type="text" />
-                                </div>
-                                <div className="MainContaner6ContentFormTel">
-                                    <p>Телефон*</p>
-                                    <input type='tel' />
-                                </div>
+                        <div className="MainContanerContent6FormNTInputs">
+                            <div className='MainContanerContent6FormInput1'>
+                                <p>Имя*</p>
+                                <input type="text" className="MainContanerContent6FormInp" placeholder='Введите свое имя...'/>
                             </div>
-                            <div className="MainContaner6ContentFormComm">
-                                <p>Комментарий</p>
-                                <input type="text" />
+                            <div className='MainContanerContent6FormInput2'>
+                                <p>Телефон*</p>
+                                <input type="text" className="MainContanerContent6FormInp" placeholder='+7 (000)000-00-00'/>
                             </div>
-                            <div className="MainContaner6ContentFormCallTime"></div>
                         </div>
-                        <div className="MainContaner6ContentContacts">
-                            <div className="MainContaner6ContentContactsTell"></div>
-                            <div className="MainContaner6ContentContactsLinks"></div>
+                        <div className="MainContanerContent6Comm">
+                            <p>Комментарий</p>
+                            <textarea placeholder='Уточните детали заказа...'/>
+                        </div>
+                        <div className="MainContanerContent6CallTime">
+                            <p>Выбрать время звонка:</p>
+                            <div className="MainContanerContent6CallTimeRadio">
+                                <label className='CallTimeLabel'>
+                                    <input type="radio" name='callTimeRadio' className='callTimeRadio'/>
+                                    <p>text</p>
+                                </label>
+                                <label className='CallTimeLabel'>
+                                    <input type="radio" name='callTimeRadio' className='callTimeRadio'/>
+                                    <p>text</p>
+                                </label>
+                                <label className='CallTimeLabel'>
+                                    <input type="radio" name='callTimeRadio' className='callTimeRadio' />
+                                    <p>text</p>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
