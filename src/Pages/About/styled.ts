@@ -20,6 +20,7 @@ import styled from "styled-components";
     export const UpToHeader = styled.div`
         background: rgb(29, 52, 133);
         width: 100%;
+        max-width: 100%;
         height: 40px;
         display: flex;
         padding-left: 128px;
@@ -339,6 +340,7 @@ import styled from "styled-components";
             height: 772px;
             margin-left: 105px;
             margin-top: 76px;
+            display: flex;
         }
         .MainContaner6ContentForm{
             z-index: 2;
@@ -402,7 +404,7 @@ import styled from "styled-components";
         }
         .MainContanerContent6CallTime p{
             color: rgb(255, 255, 255);
-            font-size: 24px;
+            font-size: 22.5px;
             font-weight: 500;
         }
         .MainContanerContent6CallTime label{
@@ -464,4 +466,138 @@ import styled from "styled-components";
             color: rgb(255, 255, 255);
             text-decoration: none;
         }
+        .MainContaner6ContentButP{
+            left: 3px;
+            right: 1.34px;
+            top: 561.16px;
+            margin-top: 18px;
+            bottom: 0;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .MainContanerContent6Contacts{
+            position: relative;
+            color: rgb(255, 255, 255);
+            font-family: 'Commissioner', sans-serif;
+            font-size: 37.76px;
+            font-weight: 400;
+            margin-top: 233px;
+            margin-left: 280px;
+        }
+        .MainContanerContent6Links{
+            margin-top:64px;
+            margin-left: -32px;
+        }
+        .MainContanerContent6Links a{
+            margin-left: 32px;
+        }
+        .MainContanerContent6ConSpan{
+            margin-left: 40px;
+        }
+        .MainContanerContent6ConImg{
+            margin-top: 8px;
+            position: absolute;
+        }
+        .MainContanerContent6Tell{
+            margin-top: 32px;
+        }
+
+        .MainContanerContent6Cards{
+            display: flex;
+            margin-left: 128px;
+            color: rgb(221, 221, 221);
+            margin-top: 128px;
+            
+        }
+        .MainContanerContent6Cards h1{
+            font-size: 48px;
+            font-weight: 700;
+        }
+        .MainContanerContent6Cards li{
+            margin-left: 35px;
+        }
+        .MainContanerContent6Cards li{
+            line-height: 43px;
+            font-size: 24px;
+            font-weight: 500;
+            font-family: "Montserrat", sans-serif;
+        }
+        .MainContanerContent6Cards ul, .MainContanerContent6Cards p{
+            margin-top: 32px;
+            color: rgb(221, 221, 221);
+        } 
+        .MainContanerContent6Cards p{
+            font-size: 32px;
+            font-weight: 500;
+            font-family: "Montserrat", sans-serif;
+        }
+        .cards h1, .cards ul, .cards p{
+            margin-left: 84px;
+        }
+        .cards{
+            width: 740px;
+            height: 301px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 16px;
+            background: rgb(29, 52, 133);
+            padding-top: 48px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .MainContanerContent6CardsGraf{
+            margin-left: 200px;
+        }
+    `;
+
+
+    export const Footer = styled.div`
+        display: flex;
+        margin-top: 220px;
+    `;
+    export const FooterLogoImg = styled.img`
+        width: 128px;
+        height: 60px;
+        margin-left: 128px;
+        margin-top: 22px;
+    `;
+    export const FooterLogo = styled.div`
+    
+    `;
+
+    export const FooterNav = styled.div`
+        margin-left: 497px;
+    `;
+    export const FooterNavLi = styled.div`
+        display: flex;
+        margin-top: 37px;
+        font-size: 24px;
+        
+    .FooterNavLiA{
+        color: rgb(51, 51, 51);
+        text-decoration: none;
+        margin-left: 27px;
+    }
+    .FooterNavLiBtn{
+        background: rgb(29, 52, 133);
+        color: rgb(221, 221, 221);
+        width: 246px;
+        height: 47px;
+        border-radius: 16px;
+        font-size: 24px;
+        cursor: pointer;
+        margin-left: 64px;
+        margin-top: -10px;
+    }
+    .FooterNavLiBtn a{
+        color: rgb(221, 221, 221);
+        text-decoration: none;
+    }
+    .MainContanerContent6Links{
+        margin-left: 25px;
+        margin-top: -20px;
+    }
+    .MainContanerContent6Links a{
+        margin-left: 32px;
+    }
     `;

@@ -1,3 +1,4 @@
+import Footer from './components/Footer'
 import Header from './components/Header'
 import MainContaner1 from './components/MainContaner1'
 import MainContaner2 from './components/MainContaner2'
@@ -21,9 +22,7 @@ const About = (): JSX.Element => {
             <MainContaner4/>
             <MainContaner5/>
             <MainContaner6/>
-            <footer>
-
-            </footer>
+            <Footer/>
         </ST.AboutWrapp>
     </>
 };
